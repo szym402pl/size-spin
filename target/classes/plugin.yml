@@ -1,0 +1,24 @@
+name: SizeSpin
+version: '1'
+main: me.sizesmp.sizeSpin.Main
+api-version: '1.21'
+authors: [ SizeSMP ]
+description: A plugin which gives you a chance to become bigger.. or smaller.
+softdepend: [PlaceholderAPI]
+commands:
+  sizespin:
+    description: Spin, spin, spin away! :)
+    usage: /sizespin <player>
+    permission: sizespin.use
+    aliases: [spin]
+  sizespinreload:
+    description: Reloads the config
+    usage: /sizespinreload
+    permission: sizespin.use
+permissions:
+  sizespin.use:
+    description: Allows to use the /sizespin (/spin) command.
+    default: op
+  sizespin.reload:
+    description: Allows to use the /sizespinreload command.
+    default: op

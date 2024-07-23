@@ -1,0 +1,14 @@
+me\sizesmp\sizeSpin\Utils\FireworkLauncher$1.class
+me\sizesmp\sizeSpin\Listeners\GUICloseListener.class
+me\sizesmp\sizeSpin\Listeners\GUIClickListener.class
+me\sizesmp\sizeSpin\Objects\GUI.class
+me\sizesmp\sizeSpin\Utils\FireworkLauncher.class
+me\sizesmp\sizeSpin\Utils\GUIAnimator$AnimationTask.class
+me\sizesmp\sizeSpin\Commands\SizeSpinCommand.class
+me\sizesmp\sizeSpin\Commands\SizeSpinReloadCommand.class
+me\sizesmp\sizeSpin\Utils\GUIAnimator$AnimationTask$1.class
+me\sizesmp\sizeSpin\Utils\SizeObjectManager.class
+me\sizesmp\sizeSpin\Objects\SizeObject.class
+me\sizesmp\sizeSpin\Listeners\FirstJoinListener.class
+me\sizesmp\sizeSpin\PAPISizeExpansion.class
+me\sizesmp\sizeSpin\Utils\GUIAnimator.class

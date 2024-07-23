@@ -1,0 +1,97 @@
+# PLUGIN MADE BY XIAOJIBAZHANSHI FOR SIZESMP NETWORK EXCLUSIVELY
+
+# Remember that by default a player has 20.0 health points since half-hearts are present
+# Almost everything supports color codes
+# Materials can be found here: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
+# GUI frame styles: half, full, none
+# Do not leave anything empty, the only exception can be gui-frame-and-filler-display-name!
+# PlaceholderAPI placeholder: %sizesmp_size%
+# Permissions: sizespin.use, sizespin.reload (Both default to OP)
+
+gui-name: "&eObtaining a size...                      &7SizeSMP"
+gui-frame-material: LIME_STAINED_GLASS_PANE
+gui-frame-style: half
+gui-frame-and-filler-display-name: "&7..."
+# Uses banners as indicators of the obtained size
+gui-arrow-indicators: true
+gui-arrow-indicators-color: ORANGE
+
+# Only this message supports {item-name} placeholder.
+notification-message: "&aYou have obtained: {item-name}&a!"
+title-on-size-change: true
+title-message: "&aSize selected!"
+
+# Set to 0.0 to disable
+fireworks-if-chance-under: 6.0
+
+size-presets:
+  1:
+    character-height-in-blocks: 0.1
+    chance-in-percent: 2.0
+    jump-height-multiplier: 1.0
+    speed-multiplier: 2.0
+    health-points: 10.0
+    gui-item:
+      material: GOLD_BLOCK
+      enchanted: true
+      item-name: "&70.1 block size &6&l(LEGENDARY)"
+  2:
+    character-height-in-blocks: 10.0
+    chance-in-percent: 5.0
+    jump-height-multiplier: 10.0
+    speed-multiplier: 0.3
+    health-points: 60.0
+    gui-item:
+      material: DIAMOND
+      enchanted: true
+      item-name: "&710 block size &1&l(ULTRA RARE)"
+  3:
+    character-height-in-blocks: 0.5
+    chance-in-percent: 15.0
+    jump-height-multiplier: 1.0
+    speed-multiplier: 1.5
+    health-points: 10.0
+    gui-item:
+      material: LAPIS_LAZULI
+      enchanted: true
+      item-name: "&70.5 block size &b(RARE)"
+  4:
+    character-height-in-blocks: 0.7
+    chance-in-percent: 15.0
+    jump-height-multiplier: 1.0
+    speed-multiplier: 1.3
+    health-points: 12.0
+    gui-item:
+      material: LAPIS_LAZULI
+      enchanted: true
+      item-name: "&70.7 block size &b(RARE)"
+  5:
+    character-height-in-blocks: 3.0
+    chance-in-percent: 30.0
+    jump-height-multiplier: 3.0
+    speed-multiplier: 0.8
+    health-points: 30.0
+    gui-item:
+      material: IRON_INGOT
+      enchanted: true
+      item-name: "&73 block size &a(UNCOMMON)"
+  6:
+    character-height-in-blocks: 5.0
+    chance-in-percent: 30.0
+    jump-height-multiplier: 5.0
+    speed-multiplier: 0.5
+    health-points: 45.0
+    gui-item:
+      material: IRON_INGOT
+      enchanted: true
+      item-name: "&75 block size &a(UNCOMMON)"
+  7:
+    character-height-in-blocks: 1.0
+    chance-in-percent: 60.0
+    jump-height-multiplier: 1.0
+    speed-multiplier: 1.0
+    health-points: 20.0
+    gui-item:
+      material: OAK_LOG
+      enchanted: true
+      item-name: "&71 block size (COMMON)"
