@@ -1,4 +1,5 @@
 me\sizesmp\sizeSpin\Utils\FireworkLauncher$1.class
+me\sizesmp\sizeSpin\Commands\SetSizeTabCompleter.class
 me\sizesmp\sizeSpin\Listeners\GUICloseListener.class
 me\sizesmp\sizeSpin\Listeners\GUIClickListener.class
 me\sizesmp\sizeSpin\Objects\GUI.class
@@ -11,4 +12,5 @@ me\sizesmp\sizeSpin\Utils\SizeObjectManager.class
 me\sizesmp\sizeSpin\Objects\SizeObject.class
 me\sizesmp\sizeSpin\Listeners\FirstJoinListener.class
 me\sizesmp\sizeSpin\PAPISizeExpansion.class
+me\sizesmp\sizeSpin\Commands\SetSizeCommand.class
 me\sizesmp\sizeSpin\Utils\GUIAnimator.class

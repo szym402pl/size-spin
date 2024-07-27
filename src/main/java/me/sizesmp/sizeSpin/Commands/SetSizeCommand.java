@@ -56,7 +56,7 @@ public class SetSizeCommand implements CommandExecutor {
             target.playSound(target.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1.1f, 1.1f);
             String notification = ChatColor.translateAlternateColorCodes
                             ('&', main.getConfig().getString("notification-message"))
-                    .replace("{item-name}", sizeMap.get(args[1]).getGuiItem().getItemMeta().getDisplayName());
+                    .replace("{item-name}", sizeMap.get(args[0]).getGuiItem().getItemMeta().getDisplayName());
             target.sendMessage(notification);
 
             sizeObjectManager.enhancePlayerBasedOnSizeObject(target, sizeMap.get(args[0]));

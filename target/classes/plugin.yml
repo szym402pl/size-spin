@@ -5,7 +5,12 @@ api-version: '1.21'
 authors: [ SizeSMP ]
 description: A plugin which gives you a chance to become bigger.. or smaller.
 softdepend: [PlaceholderAPI]
+
 commands:
+  setsize:
+    description: Set a player's size.
+    usage: /setsize <size> <player>
+    permission: sizespin.use
   sizespin:
     description: Spin, spin, spin away! :)
     usage: /sizespin <player>
@@ -14,11 +19,12 @@ commands:
   sizespinreload:
     description: Reloads the config
     usage: /sizespinreload
-    permission: sizespin.use
+    permission: sizespin.reload
+
 permissions:
   sizespin.use:
-    description: Allows to use the /sizespin (/spin) command.
+    description: Allows to use /sizespin & /setsize.
     default: op
   sizespin.reload:
-    description: Allows to use the /sizespinreload command.
+    description: Allows to use /sizespinreload.
     default: op
