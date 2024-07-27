@@ -1,5 +1,7 @@
 package me.sizesmp.sizeSpin;
 
+import me.sizesmp.sizeSpin.Commands.SetSizeCommand;
+import me.sizesmp.sizeSpin.Commands.SetSizeTabCompleter;
 import me.sizesmp.sizeSpin.Commands.SizeSpinCommand;
 import me.sizesmp.sizeSpin.Commands.SizeSpinReloadCommand;
 import me.sizesmp.sizeSpin.Listeners.FirstJoinListener;
@@ -32,6 +34,8 @@ public final class Main extends JavaPlugin {
         Bukkit.getPluginManager().registerEvents(new FirstJoinListener(new SizeSpinCommand
                 (new GUI(this, soManager),this)), this);
 
+        getCommand("setsize").setTabCompleter(new SetSizeTabCompleter());
+        getCommand("setsize").setExecutor(new SetSizeCommand(this, new SizeObjectManager(this)));
         getCommand("sizespin").setExecutor(new SizeSpinCommand(new GUI(this, soManager), this));
         getCommand("sizespinreload").setExecutor(new SizeSpinReloadCommand(soManager, this));
 

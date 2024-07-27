@@ -35,6 +35,8 @@ public class SizeObjectManager {
         double genScaleDefault = player.getAttribute(Attribute.GENERIC_SCALE).getDefaultValue();
         double genJumpStrengthDefault = player.getAttribute(Attribute.GENERIC_JUMP_STRENGTH).getDefaultValue();
         double genSafeFallDistDefault = player.getAttribute(Attribute.GENERIC_SAFE_FALL_DISTANCE).getDefaultValue();
+        double blockInterRangeDefault = player.getAttribute(Attribute.PLAYER_BLOCK_INTERACTION_RANGE).getDefaultValue();
+        double entInterRangeDefault = player.getAttribute(Attribute.PLAYER_ENTITY_INTERACTION_RANGE).getDefaultValue();
 
         player.getAttribute(Attribute.GENERIC_MOVEMENT_SPEED).setBaseValue
                 (genMovementSpeedDefault/2 * obj.getSpeed());
@@ -45,14 +47,18 @@ public class SizeObjectManager {
         player.getAttribute(Attribute.GENERIC_MAX_HEALTH).setBaseValue(obj.getHealthPoints());
 
         // safe fall distance compensation
-        if (obj.getJumpStrength() > 1.0) {
+        if (obj.getHeight() > 1.0) {
             player.getAttribute(Attribute.GENERIC_SAFE_FALL_DISTANCE).setBaseValue
                     (genSafeFallDistDefault * obj.getJumpStrength());
         }
 
-        // jump height can't be lower than default
-        if (player.getAttribute(Attribute.GENERIC_JUMP_STRENGTH).getValue() < genJumpStrengthDefault) {
-            player.getAttribute(Attribute.GENERIC_JUMP_STRENGTH).setBaseValue(genJumpStrengthDefault);
+        // interaction range compensation
+        if (obj.getHeight() > 1.0) {
+            player.getAttribute(Attribute.PLAYER_ENTITY_INTERACTION_RANGE).setBaseValue
+                    (entInterRangeDefault/2 * obj.getHeight());
+
+            player.getAttribute(Attribute.PLAYER_BLOCK_INTERACTION_RANGE).setBaseValue
+                    (blockInterRangeDefault/2 * obj.getHeight());
         }
 
     }
